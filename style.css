@@ -1,0 +1,87 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 3fr ;
+    
+    grid-template-areas:
+    "header header" 
+    "Navigatoin Navigatoin"
+    "Hero Hero"
+    "cladd sidebar "
+    "footer footer";
+    gap: 10px;
+    
+        
+        
+}
+.header{
+    grid-area: header;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    height: 10vh;
+    text-align: center;
+}
+.Navigatoin{
+    grid-area: Navigatoin;
+    background-color: rgba(46, 44, 44, 0.827);
+    color: white;
+    padding: 5px;
+    height: 10vh;
+    text-align: center;
+}
+
+.cade{
+    grid-template-areas: "main  "
+    "comments";
+    gap: 10px;
+    
+    background: rgba(204, 202, 202, 0.511);
+
+}
+.class{
+    grid-template-areas: "main  "
+    "comments";
+    gap: 10px;
+    background-color: rgba(179, 171, 171, 0.332);
+
+}
+
+    
+    
+.main{
+    grid-area: features;
+    background-color: rgba(210, 207, 207, 0.758);
+    padding: 10px;
+}
+.comments{ 
+    grid-area: testimonials;
+   
+    padding: 30px;
+    margin-top: 5px;
+}
+.Search{
+    grid-area: features;
+    background-color: rgba(210, 207, 207, 0.758);
+    padding: 30px;
+}
+.Related{ 
+    grid-area: testimonials;
+    background-color: rgba(210, 207, 207, 0.758);
+    padding: 30px;
+    margin-top: 10px;
+    height: 50%;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 10px;
+}
